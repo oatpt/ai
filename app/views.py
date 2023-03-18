@@ -3,8 +3,9 @@ from django.http import HttpResponse
 import requests
 from django.views.decorators.csrf import csrf_exempt
 from django.http import JsonResponse
-from app.models import Webhook
 import json
+
+
 # Create your views here.
 def hello(request):
 
@@ -15,7 +16,7 @@ def hello(request):
         radius = "1500"
         types = "restaurant"
         keyword = "food"
-        api_key = "AIzaSyB7bq0fwc6swgJWX8Rt3Ka5cJYWfqmerGY"
+        api_key = "AIzaSyD0jw7NhIQb_NZj86Ku4JtLhbtqJqEwLgs"
 
         # สร้าง URL พร้อมใส่ API key และ parameter อื่น ๆ
         request_url = f"{url}location={location}&radius={radius}&types={types}&keyword={keyword}&key={api_key}"
