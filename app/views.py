@@ -26,7 +26,7 @@ def hello(request):
 
         # แสดงผลลัพธ์
         print(response.json())
-        return HttpResponse(response)
+        return HttpResponse('hi')
     
 @csrf_exempt
 def webhook(request):
